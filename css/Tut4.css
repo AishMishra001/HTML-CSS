@@ -1,0 +1,24 @@
+*{
+    margin: 0;  
+    padding: 0;
+
+    /* short cut for this : 
+    m0+p0 */
+}
+.red{
+    background: rgba(255, 0, 0, 0.606);
+    color: azure;   /*    Short cut for this : Bg:red;  */
+    height: 200px;
+} 
+
+
+
+.green{
+    background: rgba(0, 128, 0, 0.725);     
+    color: aqua;
+}
+
+.blue{
+    background: blue;
+    color: rgb(144, 134, 152);
+}

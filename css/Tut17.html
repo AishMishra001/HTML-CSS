@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background: aquamarine;
+            height: 100vh;
+        }
+        .box{
+            width: 300px;
+            background-color: red;
+            color: white;
+            height: 30px; 
+            display: flex;
+            justify-content: center;
+            align-items: centre;
+            /* animation-name: widthAnimate ;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; */
+            animation: widthAnimate 2s ease-in-out 2s infinite alternate-reverse;
+        }
+        .box1{
+            width: 300px;
+            background-color: greenyellow;
+            color: white;
+            height: 30px; 
+            display: flex;
+            justify-content: center;
+            align-items: centre;
+            animation-name: widthAnimate ;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes widthAnimate {
+            from{
+                width: 300px;
+                height: 30px;
+            }
+            to{
+                width: 800px;
+                height: 60px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hi</div>
+        <br>
+        <div class="box1">Hi</div>
+        <br>
+        <div class="box">Hi</div>
+        <br>
+        <div class="box1">Hi</div>
+        <br>
+        <div class="box">Hi</div>
+        <br>
+        <div class="box1">Hi</div>
+        <br>
+        <div class="box">Hi</div>
+        <br>
+        <div class="box1">Hi</div>
+        <br>
+    </div>
+</body>
+</html>

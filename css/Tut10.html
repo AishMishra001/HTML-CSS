@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .container{
+            font-size: 34px;
+        }
+        .box1{
+            /* font-size: 3em;  */
+             /* (em:Unit relative to parent font size . for ex- 3em: 3*(parent font size)= 3*34 = 102);  */
+
+            font-size: 3rem;  
+         
+            /* (rem: Unit relative to root font size that is html tag    For ex - 3rem = 3*16 = 48 where 16px is the default size of html tag)  */
+            background-color: red;
+
+        }
+
+        .box2{
+            background-color: blue;
+            width:334px; 
+            width:50vw ; 
+            min-width: 55vw; 
+             /* (minimum width should be 55vw) */
+             /* (50vw: 50% of view port width ) */
+            height: 50vh;
+            min-height: 55vh ; 
+            /* (minimum height should be 55vh) */
+             /* (50vh: 50% of view port height ) */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum reiciendis, quos eveniet consectetur tempora corporis iure molestias non ut!</p> 
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae explicabo veniam repudiandae aliquid! Molestias enim necessitatibus eveniet mollitia provident?</div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ex voluptate, nulla sequi dolorum doloremque voluptatibus, magnam possimus ducimus id ut laborum ab fugit? Quas, similique.</div>
+    </div>
+</body>
+</html>

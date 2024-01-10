@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>This is HTML form</h2>
+    <form action="backend.php">
+    <label for="name"> Name: </label>
+    <div>
+      <input type="text" name="myName" id="name">
+    </div>
+    <br>
+    <label for="Id"> CardId: </label>
+    <div>
+        <input type="text" name="myRole" id="Id">
+     </div>
+     <br>
+     <label for="email"> Email: </label>
+     <div>
+         <input type="email" name="myEmail" id="email">    
+    </div>
+    <br>
+    <label for="Dob"> D.O.B: </label>
+    <div>
+          <input type="date" name="Mydate" id="Dob"> 
+    </div>
+    <br>
+        <label for="Mynumber"> Bonus: </label>
+    <div>
+        <input type="number" name="Mynumber" id="Mynumber"> 
+    </div>
+    <br>
+    <label for="Eligible">Are You Eligible?</label>
+    <div>
+         <input type="checkbox" value="MyCheckbox" checked id="Eligible">  
+    </div>
+    <label for="Gender">Gender:</label>
+    <br>
+         Male <input type="radio" name="Gender" id="Gender"> Female <input type="radio" name="Gender" id="Gender">   Other <input type="radio" name="Gender">  
+    </div>
+    <br>
+    <div>
+        <label for="About"> Write About Yourself:</label>
+        <br>
+        <br><textarea name="myText" id="About" cols="90" rows="10"></textarea>  
+    </div>
+    <br>
+      
+        <label for="car"> Car:</label>
+           <select name="MyCar" id="car">
+            <option value="Indica">Indica</option>
+            <option value="Lambo" selected>Lambo</option>
+            <option value="Budardi">Budardi</option>
+        </select>
+    </div>
+
+    
+    <br>
+    <div>
+        <br>
+       <input type="submit" value="Submit Now" >  
+       <input type="reset" value="Reset Now">
+    </div>
+    </form>
+    <!-- Shortcut: input:em :--- <input type="email" name="" id=""> -->
+     <!-- Shortcut: input:sub :--- <input type="submit" value=""> -->
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display:grid; 
+           
+            background-color: aquamarine;
+            /* grid-row-gap: 9px;
+            grid-column-gap: 9px; */
+            /* Note : We can use a  shorthand for this grid-row-gap and grid-column-gap together that is grid gap  */
+            
+            
+            grid-gap: 9px 9px;
+            /* if written as grid-gap; 9px only that mens both row and column gap is 9px */
+            
+            
+            grid-template-columns: auto auto auto auto;
+            /* Note : grid-template-columns : auto auto ka mtlb ki kitne number of columns per row rhege jaise ki ess case me do brr auto auto likha ha mtlb do column jo ki auto hoge mtlb 50%-50% width lege simimarly if 30px auto hoga mtlb 1st column of the row will be of 30px and next column will occupy all the remaining space . 
+         */
+
+         /* grid-template-rows: 300px 400px; */
+
+          /* NOTE : grid-template-rows sets the height of the rows  */
+
+        ;
+        }
+            .box1{
+             background-color: red;
+            border: 2px solid black;
+            grid-row: 1/3;
+            /* grid-row: 1/span 3; */
+            /* 1/span 3 to take the space of 3 elements */
+            grid-column: 1/3;
+        }
+        .box2{
+            background-color: red;
+            border: 2px solid black;
+            
+        }
+        .box3{
+            background-color: red;
+            border: 2px solid black;
+            
+        }
+        .box4{
+            background-color: red;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box4">5</div>
+        <div class="box4">6</div>
+        <div class="box4">7</div>
+        <div class="box4">8</div>
+        <div class="box4">9</div>
+    </div>
+</body>
+</html>

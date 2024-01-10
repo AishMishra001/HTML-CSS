@@ -1,0 +1,74 @@
+The image in your HTML code may not be appearing on the screen because of a few issues in your code:
+
+1. Typo: You have a typo in the HTML code. The class name "cantainer" should be "container."
+
+2. Image Path: You have specified a relative path for the image source, "../image/dog.jpg." Ensure that the path is
+correct, and the image file exists in the specified location relative to the HTML file.
+
+Here's the corrected code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation practice set</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .image {
+            height: 200px;
+            width: 100px;
+            animation: rotate 2s ease-in-out infinite;
+        }
+
+        .program {
+            height: 2px;
+            background-color: red;
+            animation: progressbar 2s ease-in-out 1;
+        }
+
+        @keyframes progressbar {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                width: 30vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .container {
+            height: 100vh;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="program"></div>
+    <div class="container">
+        <img src="../image/dog.jpg" alt="" class="image">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+    <link rel="stylesheet" href="Tut4.css">
+</head>
+<body>
+    <div class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, atque unde consectetur earum officia architecto aperiam deleniti ullam quia velit minima magnam porro cum possimus sit excepturi totam illo. Reiciendis eveniet aperiam explicabo similique, impedit error accusantium enim? Similique amet voluptatem cum enim. Quasi suscipit corrupti iste. Ipsa ullam et ducimus error, veritatis cum cumque expedita quis. Ab amet ullam cum fugit ipsam deleniti commodi animi fuga reprehenderit dolores ducimus, unde aut incidunt est doloremque inventore facilis rerum quas natus omnis eos tenetur? Incidunt magni dolorem eveniet laudantium ipsam ipsum beatae omnis ab praesentium nisi. Illo, voluptatibus tenetur atque commodi ut aspernatur. Neque molestias, voluptate quisquam quasi eum minima sapiente ab? Rerum magni, nemo perferendis exercitationem unde veritatis quas. Vitae voluptatibus nesciunt reprehenderit ducimus beatae earum. Vero molestiae, ipsum dolores reprehenderit corporis magni architecto quia exercitationem iure soluta facilis omnis quidem recusandae nam odit saepe, doloremque dolore inventore iste dolorum! Alias ratione error, ullam esse natus corrupti! Distinctio explicabo quae eos ex perspiciatis consectetur quod repellendus. Quod hic quidem a iusto placeat recusandae veniam maiores minima doloribus quibusdam ad cum quos et deleniti ut, nam sint delectus voluptas ea rem, in aut nisi! Laborum tempora esse, ut dicta repellat unde.
+    </div>
+
+   <br>
+
+    <div class="green">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vitae laborum ipsum eaque ducimus laudantium sed voluptate sit. Eum blanditiis alias voluptates excepturi omnis repellendus expedita tempora temporibus facilis aliquid molestiae labore, modi non tenetur doloribus nostrum! Esse eum impedit voluptas molestias alias? Soluta nulla est iusto quasi praesentium, fugiat nobis ea vitae earum atque cum quo. Soluta, eveniet exercitationem. Incidunt eveniet, iste nulla qui, repellat obcaecati excepturi facere veniam sit aspernatur optio delectus eum provident est inventore? Harum nobis dolorem veritatis doloremque et dolores quidem alias accusamus at itaque quia eos eveniet doloribus esse totam deleniti placeat porro id earum modi, necessitatibus, natus debitis. Praesentium qui tempora nostrum repellendus illo minima, earum doloribus assumenda quos animi. Consectetur, temporibus nostrum reiciendis cupiditate iure iste doloribus quibusdam non magni cumque ex porro voluptatem veritatis fuga alias! Harum, hic nobis tenetur aliquam asperiores deserunt dolor iste at enim repellendus nam unde cum? Illo laboriosam sunt quisquam laborum aspernatur distinctio eaque eveniet alias deserunt exercitationem reiciendis maiores fugit, omnis odio? Optio architecto quidem veniam vel consectetur, saepe illo, odit delectus ipsum, esse a est enim nam tempora sequi porro quibusdam inventore minus! Aut, aliquam. Dolorum odio mollitia excepturi voluptas, illo explicabo nostrum harum.
+    </div>
+<br>
+    <div class="blue">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem mollitia nam quia, sed architecto sequi autem ex id in nesciunt sit ipsa voluptates laboriosam officia amet impedit ipsam. Nobis ipsum dignissimos, at laborum placeat nulla veniam? Sint doloremque nam eos corporis consequuntur, dolores praesentium error. Excepturi beatae quam praesentium omnis libero, molestiae earum eligendi illo ut veniam harum assumenda saepe soluta, minus sequi ullam et maiores at minima. Explicabo eligendi non atque autem ip*{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .nav{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        
+        .wrapper{
+            padding-bottom: 3%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color:rgba(0, 0, 0, 0.311);
+        }
+        h1{
+            height: max-content;
+            width: max-content;
+            margin: 1rem;
+        }
+        .grid{
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .img{
+            position: relative;
+        }
+        .image{
+            position: absolute;
+            height: 15rem;
+            width: 15rem;
+            z-index: -1;
+            border-radius: 0.4rem;
+        }
+        .blur{
+            height: 15rem;
+            width: 15rem;
+            border-radius: 0.4rem;
+            background-color: rgba(0, 0, 0, 0.311);
+        }
+        /* it can also be written like this
+           .blur{
+                background-color: rgba(0, 0, 0, 0);
+            }
+        */
+        .img:hover{
+            .blur{
+                background-color: rgba(0, 0, 0, 0);
+            }
+            .image{
+                scale: 1.04;
+                box-shadow: 0px 0px 12px rgb(87, 86, 86),-0px -0px 12px rgb(87, 86, 86);
+            }
+        }
+        .flower-info {
+            display: none;
+            text-align: center;
+            font-size: 24px;
+        }
+        .footer{
+            width: 100%;
+            height: 120px;
+            background-color:red;
+            border: 3px solid black;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }7ecessitatibus eius iure sequi voluptas laborum rem quaerat natus iusto repudiandae exercitationem, aliquam dolorem, optio enim voluptatibus expedita laboriosam cum dignissimos perferendis vitae odio nemo fugit! Ab ipsa fuga veritatis fugiat. Vitae unde quo delectus cum beatae error neque ex voluptatem a voluptates amet expedita accusamus doloribus dolorem voluptatibus, excepturi atque. Labore quod exercitationem nihil minus asperiores ea ullam! Magni corporis assumenda voluptas! Ipsam repellat ipsum perferendis voluptates eius ut magnam, qui eum voluptatem et. Hic quia nihil facilis veniam expedita veritatis itaque? Perferendis nihil, sunt blanditiis voluptatum deleniti totam tenetur! Quam consectetur alias cupiditate nostrum sunt quibusdam reiciendis adipisci quos? Delectus, et incidunt enim natus quos quas ipsum hic molestias, ad vel corrupti libero. Et commodi quas harum. Repellat quae saepe pariatur alias officia, unde eum consequuntur harum soluta placeat ab, est voluptate corporis mollitia aliquid laboriosam aspernatur quaerat dolorum atque officiis repellendus facere sit iste. Obcaecati a repellat optio doloribus pariatur! Ullam delectus sequi rem accusantium dolore doloribus magnam. Qui quisquam ratione libero ducimus culpa facilis, quos velit debitis, sed eveniet quaerat.
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            background: red;
+            height: 400px;
+        }
+        .box{
+            border: 2px solid black;
+             transform: translate(34px,78px) ;
+             display: inline-block;
+
+            /* transform: rotate(45deg); */
+            /*transform-origin: 0; */
+            /* transform: scale(3 , 3);
+            transform: scaleX(3);
+            or
+            transform: scaleY(3); */
+
+            /* transform: skew(30deg,30deg); */
+            /* transform: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()); */
+            /* transform:rotateY(45deg);
+            transform:rotateX(45deg);
+            transform:rotateZ(45deg);
+             */
+        }
+       
+        /* img:hover{
+            width:50px;
+        }    */
+        img{
+            height: 200px;
+            width: 146px;
+            /* transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s; */
+            transition: width 2s ease-in-out 3s , height 4s ease-in ; 
+            /* Note : here transition : property duration timing-function delay */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage"src="/image/Dream.jpg" alt="" class="image">
+            <button id="bdn">Toggle</button>
+        </div>
+    </div>
+</body>
+    <script>
+      myImage.style.width='146px'; 
+      myImage.style.height='16px'; 
+      bdn.addEventListener("click", ()=> {
+          myImage.style.height='456px'; 
+        if(myImage.style.width==='546px'){
+            myImage.style.width = "146px";
+        }
+        else if(myImage.style.width=='146px'){
+            myImage.style.width="546px"; 
+        }
+      })
+    </script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postions</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        position: sticky;
+        top:0; 
+        z-index: 1;
+    }
+    nav{
+        background-color: black;
+        height: 40px;
+        
+       }
+    li{
+        display: inline;
+        background-color: black;
+        color: white;
+    }
+    .box1{
+        background-color: bisque;
+        height: 5000px;
+        width: 50vw;
+        margin: auto;
+        padding: 10px;
+    }
+    .box2{
+        background-color: cornflowerblue;
+        height: 200px;
+        width:  200px;
+        position: relative;
+    }
+    .box3{
+        background-color: rgb(189, 110, 15);
+        height: 50px;
+        width: 50px;
+        /* position: relative; */
+        /* Note : By default position : static hota h orr if tum isko change karke relative y orr kuch ni kroge to tum "top left right bottom" wali property ni lga paoge  */
+        position: absolute;
+        /* NOTE: ab if position : absolute ; karke top=0 y bottom=0 aase kuch use kroge to wo puure web page ke respect me top y bottom per aa jayega  */
+        /* Or it tumko with respect to parent element ke joki ess case me box1 h to aase me box1 ka position: relative; karne se box1 ke respect me top bottom hoga  */
+        left: 672px;
+        bottom: 250px;
+
+
+    }
+    .box4{
+        background-color: rgb(97, 218, 41);
+        height: 60px;
+        width: 50px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        border-radius: 20px;
+        
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Home</li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="box1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci itaque eligendi illum perferendis corrupti sequi, veritatis repellat, corporis temporibus tempore a quos, sapiente aperiam ratione odio iusto cum rerum exercitationem
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dicta?</div>
+        <div class="box3">LIKE</div>
+        <div class="box4">chat with us?</div>
+        </div>
+</body>
+</html>
