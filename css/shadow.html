@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadows</title>
+  <style>
+    :root{
+      --primary-color : brown ;
+      --custom-width : 400px ; 
+    }
+    .container{
+      background-color: beige ;
+      border: 2px solid black;
+      display: flex;
+      height: 800px;
+      align-items: center;
+      justify-content: center;
+    }
+    .box{
+      background-color: blueviolet;
+      border: 2px solid  var(--primary-color);
+      height: 400px;
+      width: 400px;
+      /*  box-shadow: 10px 10px black;
+      offset-x offset-y colour  */
+      /* box-shadow: 10px 10px 10px 10px black; */
+              /* offset-x offset-y blur spread  */
+      /* box-shadow: inset 10px 10px red; */
+              /* inset offset-x offset-y spread  */
+
+      /* Multiple shadows :  */
+
+      box-shadow: 4px 10px var(--primary-color) , 5px 15px blue;        
+
+         }
+         #head{
+          text-shadow: 5px 5px 3px white;
+         }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h1 id="head">hi hello </h1>
+    </div>
+  </div>
+</body>
+</html>
