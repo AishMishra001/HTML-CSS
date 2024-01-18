@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animations</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      background-color: beige;
+      border: 2px solid black ;
+      width: 100vw;
+      height: 100vh;
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+
+    }
+    .box{
+
+      height: 50px;
+      width: 200px;
+      border-radius: 10px;
+      background-color: blue;
+      margin: 10px;
+      border: 2px solid black;
+      position: relative;
+      /* animation-name: animation;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-delay: 1s;
+      animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      animation-fill-mode: both; */
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      animation: animation1 5s ease-in-out 1s infinite alternate both; 
+    }
+    @keyframes animation1 {
+      from{
+        top: 0;
+        left: 0;
+      }
+      to{
+       top: 0;
+       left: 750px;
+  
+      }
+    }
+    .box2{
+      height: 50px;
+      width: 200px;
+      border-radius: 10px;
+      background-color: blue;
+      /* margin: 10px; */
+      border: 2px solid black;
+      position: relative;
+      animation: animation 5s ease-in-out 1s infinite alternate-reverse both; 
+      margin-top: 700px;
+
+  }
+ 
+    @keyframes animation {
+      from{
+        top: 0;
+        left: 0;
+      }
+      to{
+       top: 0;
+       left:750px ;
+
+      }
+    }
+    .ball{
+      height: 50px;
+      width : 50px ;
+      background-color: red;
+      margin : 10px;
+      border: 2px solid black;
+      border-radius: 30px;
+      position: relative;
+      animation: ball 5s ease-in-out 1s infinite alternate both;
+    }
+    @keyframes ball {
+      0%{
+        top:0 ;
+      }
+      25%{
+        top:600px ; 
+      }
+      50%{
+        top:300px ; 
+      }
+      75%{
+        top:600px ; 
+      }
+      100%{
+        top:600px ; 
+      }
+    }
+    .flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+    </div>
+    <div class="flex">
+    <div class="ball"></div>
+  </div>
+    <div class="box2">
+    </div>
+
+</body>
+</html>
